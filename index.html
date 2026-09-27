@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzzhost - Sewa VPS, Hosting & Domain Murah Terpercaya</title>
+    <meta name="description" content="Alzzhost menyediakan VPS harian, mingguan, bulanan, shared hosting, dan domain dengan harga murah, proses cepat, dan garansi uang kembali 3 hari. Order gampang langsung via WhatsApp.">
+    <meta name="keywords" content="VPS murah, sewa VPS harian, hosting murah, domain murah, alzzhost">
+    <meta name="author" content="Alzzhost">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alzzhost - Sewa VPS, Hosting & Domain Murah Terpercaya">
+    <meta property="og:description" content="VPS harian mulai Rp15.000, hosting & domain murah, proses cepat, garansi uang kembali 3 hari. Order langsung via WhatsApp.">
+    <meta property="og:image" content="https://alzzhost.my.id/og-image.jpg">
+    <meta property="og:url" content="https://alzzhost.my.id">
+    <link rel="canonical" href="https://alzzhost.my.id">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alzzhost - Sewa VPS, Hosting & Domain Murah Terpercaya">
+    <meta name="twitter:description" content="VPS harian mulai Rp15.000, hosting & domain murah, proses cepat, garansi uang kembali 3 hari.">
+    <meta name="twitter:image" content="https://alzzhost.my.id/og-image.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto&display=swap" rel="stylesheet">
+<style>
+html, body{ margin: 0; padding: 0; }
+body{ background-color: lightblue; font-family: 'Roboto', sans-serif; overflow-x: hidden; }
+h1,h2,h3,h4,h5{ text-align:center; font-family: 'Poppins', sans-serif; font-weight: 700; background: linear-gradient(to bottom, #66d9ff, #0072ff, #001a4d); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: 0.5px black; text-shadow: 0 0 10px rgba(0,150,255,0.8), 0 0 18px rgba(0,150,255,0.6); }
+h1{ font-size: 40px; -webkit-text-stroke: 1px black; text-shadow: 0 0 15px rgba(0,150,255,0.8), 0 0 25px rgba(0,150,255,0.6); }
+h2,h3,h4,h5{ font-size: 18px; margin: 0 0 12px 0; }
+p{ text-align:center; }
+.marquee-box { width: 100%; overflow: hidden; position: relative; height: 24px; }
+.marquee { font-size: 14px; white-space: nowrap; position: absolute; left: 100%; animation: berjalan 8s linear infinite; margin: 0; }
+@keyframes berjalan { 0% { left: 100%; } 100% { left: -100%; } }
+#bg-video { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: 0; }
+.content-wrap { position: relative; z-index: 1; }
+
+.card{
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  margin: 18px auto;
+  max-width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.card button {
+  background-color: white;
+  color: #0072ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto 0;
+  font-weight: 600;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+@media (max-width: 480px) {
+  .card { margin: 10px auto; padding: 10px; }
+  h1 { font-size: 34px; }
+}
+
+.section-title {
+  color: #001a4d;
+  text-shadow: none;
+  -webkit-text-stroke: 0;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  margin-top: 30px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  padding: 0 10px;
+}
+
+.tab-btn {
+  background: rgba(255,255,255,0.5);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #001a4d;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.tab-btn.active {
+  background: #0072ff;
+  color: white;
+}
+
+.promo-banner {
+  max-width: 700px;
+  margin: 0 auto 16px;
+  padding: 10px 16px;
+  background: rgba(255,60,60,0.15);
+  border: 1px solid rgba(255,60,60,0.4);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8b0000;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease, margin 0.4s ease, padding 0.4s ease, border-width 0.4s ease;
+}
+
+.promo-banner.promo-habis {
+  opacity: 0;
+  max-height: 0;
+  margin: 0 auto;
+  padding: 0 16px;
+  border-width: 0;
+  pointer-events: none;
+}
+
+.promo-banner span {
+  color: #d10000;
+  font-weight: 700;
+}
+
+.pricing-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.price-card {
+  background: rgba(255,255,255,0.5);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.price-card .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-card .nama-produk {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #001a4d;
+  text-align: left;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.price-card .harga {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0072ff;
+  white-space: nowrap;
+}
+
+.price-card .panah {
+  font-size: 12px;
+  color: #0072ff;
+  margin-left: 8px;
+  display: inline-block;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.price-card.open .panah {
+  transform: rotate(180deg) scale(1.15);
+}
+
+.price-card .row > div:last-child {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.price-card .detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.price-card.open .detail {
+  max-height: 400px;
+  margin-top: 10px;
+}
+
+.price-card .deskripsi {
+  font-size: 13px;
+  text-align: left;
+  color: #222;
+  margin: 0 0 8px 0;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  text-align: left;
+  font-size: 13px;
+}
+
+.price-card ul li {
+  padding: 3px 0;
+}
+
+.price-card ul li::before {
+  content: "✔ ";
+  color: #0072ff;
+}
+
+.price-card button {
+  background-color: white;
+  color: #0072ff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 6px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.price-card button:active {
+  transform: scale(0.92);
+  background-color: #eaf3ff;
+  box-shadow: 0 0 0 3px rgba(0,114,255,0.25);
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto 14px;
+  padding: 0 10px;
+}
+
+.filter-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.6);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #001a4d;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.filter-icon-btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.sheet-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.sheet-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bottom-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  background: #eaf6ff;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -4px 18px rgba(0,0,0,0.3);
+  padding: 10px 18px 22px;
+  transform: translateY(100%);
+  transition: transform 0.28s ease;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.bottom-sheet.open {
+  transform: translateY(0);
+}
+
+.sheet-drag-zone {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 10px;
+  margin: -8px 0 4px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.sheet-drag-zone:active {
+  cursor: grabbing;
+}
+
+.sheet-handle {
+  width: 40px;
+  height: 4px;
+  background: rgba(0,0,0,0.25);
+  border-radius: 4px;
+}
+
+.sheet-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #001a4d;
+  margin: 14px 0 8px;
+  text-align: left;
+}
+
+.sheet-title:first-of-type {
+  margin-top: 0;
+}
+
+.sheet-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sheet-apply-btn {
+  display: block;
+  width: 100%;
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.grup-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #001a4d;
+  text-align: left;
+  margin: 8px 2px -2px;
+  padding-top: 6px;
+  border-top: 1px dashed rgba(0,26,77,0.3);
+}
+
+.grup-label:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.banding-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #001a4d;
+  margin-top: 12px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.banding-check input {
+  width: 15px;
+  height: 15px;
+  accent-color: #0072ff;
+  cursor: pointer;
+}
+
+.banding-bar {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 14px;
+  z-index: 12;
+  background: #001a4d;
+  color: white;
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  font-size: 12.5px;
+}
+
+.banding-bar.show {
+  display: flex;
+}
+
+.banding-bar span {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.banding-bar-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.banding-bar-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#bandingResetBtn {
+  background: transparent;
+  color: #dce6ff;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+#bandingBukaBtn {
+  background: #0072ff;
+  color: white;
+}
+
+#bandingBukaBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.banding-table {
+  display: flex;
+  gap: 10px;
+}
+
+.banding-kolom {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255,255,255,0.6);
+  border-radius: 10px;
+  padding: 12px 10px;
+}
+
+.banding-kolom h4 {
+  margin: 0 0 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #001a4d;
+}
+
+.banding-kolom .banding-harga {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #0072ff;
+  font-size: 13px;
+}
+
+.banding-kolom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11.5px;
+  text-align: left;
+}
+
+.banding-kolom ul li {
+  padding: 3px 0;
+}
+
+.banding-kolom ul li::before {
+  content: "✔ ";
+  color: #0072ff;
+}
+
+.banding-order-btn {
+  display: block;
+  width: 100%;
+  background-color: #0072ff;
+  color: white;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12.5px;
+  margin-top: 10px;
+  transition: transform 0.15s ease;
+}
+
+.banding-order-btn:active {
+  transform: scale(0.94);
+}
+
+.social-float {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-float a,
+.social-float .sf-toggle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.social-float a:active,
+.social-float .sf-toggle:active {
+  transform: scale(0.9);
+}
+
+.social-float svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.social-float .sf-toggle {
+  background: #0072ff;
+  animation: sfPulse 1.6s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+.social-float .sf-toggle svg {
+  fill: none;
+  stroke: white;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  transition: transform 0.3s ease;
+}
+
+.social-float.buka .sf-toggle {
+  animation: none;
+}
+
+.social-float.buka .sf-toggle svg {
+  transform: rotate(45deg);
+}
+
+.social-float .sf-wa { background: #25D366; }
+.social-float .sf-tele { background: #229ED9; }
+.social-float .sf-gmail { background: linear-gradient(135deg, #EA4335, #FBBC05, #34A853, #4285F4); }
+
+.social-float .sf-wa,
+.social-float .sf-tele,
+.social-float .sf-gmail {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0) translateY(20px);
+}
+
+.social-float.buka .sf-wa,
+.social-float.buka .sf-tele,
+.social-float.buka .sf-gmail {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+
+.social-float.buka .sf-wa { transition-delay: 0.05s; }
+.social-float.buka .sf-tele { transition-delay: 0.1s; }
+.social-float.buka .sf-gmail { transition-delay: 0.15s; }
+
+@keyframes sfPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.cara-kerja {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  display: flex;
+  gap: 8px;
+  padding: 0 10px;
+}
+
+.langkah {
+  flex: 1;
+  background: rgba(255,255,255,0.5);
+  border-radius: 12px;
+  padding: 14px 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.langkah-angka {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #0072ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0 auto 8px;
+}
+
+.langkah strong {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #001a4d;
+  margin-bottom: 4px;
+}
+
+.langkah p {
+  font-size: 10.5px;
+  color: #333;
+  margin: 0;
+  line-height: 1.35;
+}
+</style>
+    </head>
+    <body>
+      <audio id="bgMusic" loop controls style="position:fixed; bottom:10px; left:10px; z-index:9999;">
+  <source src="musik.mp3" type="audio/mpeg">
+</audio>
+<script>
+document.body.addEventListener('click', function() {
+  document.getElementById('bgMusic').play();
+}, { once: true });
+
+document.addEventListener('visibilitychange', function() {
+  const music = document.getElementById('bgMusic');
+  if (document.hidden) {
+    music.pause();
+  } else {
+    music.play().catch(function() {});
+  }
+});
+</script>
+      <video autoplay muted loop id="bg-video">
+  <source src="gojo.mp4" type="video/mp4">
+</video>
+
+      <div class="social-float" id="socialFloat">
+        <a class="sf-wa" href="https://wa.me/6285647110029" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.9 9.9 0 0 0 4.62 1.15h.01c5.46 0 9.9-4.45 9.9-9.9C21.95 6.45 17.5 2 12.04 2zm0 18.06h-.01a8.14 8.14 0 0 1-4.15-1.14l-.3-.18-3.08.79.82-3-.2-.31a8.14 8.14 0 0 1-1.25-4.31c0-4.5 3.66-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.39a8.1 8.1 0 0 1 2.39 5.78c0 4.5-3.67 8.16-8.16 8.16zm4.48-6.12c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
+        </a>
+        <a class="sf-tele" href="https://t.me/username_telegram_kamu" target="_blank" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M21.9 4.6 18.7 20c-.2 1-.9 1.2-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9L18 6.7c.4-.4-.1-.6-.6-.2L6.6 13.2l-4.9-1.5c-1-.3-1-1 .2-1.5L20.5 3.4c.8-.3 1.6.2 1.4 1.2z"/></svg>
+        </a>
+        <a class="sf-gmail" href="mailto:email_kamu@gmail.com" target="_blank" aria-label="Gmail">
+          <svg viewBox="0 0 24 24"><path d="M22 5.5v13a1.5 1.5 0 0 1-1.5 1.5H19V8.24l-7 5.25-7-5.25V20H3.5A1.5 1.5 0 0 1 2 18.5v-13A1.5 1.5 0 0 1 3.5 4h.35L12 10.5 20.15 4h.35A1.5 1.5 0 0 1 22 5.5z"/></svg>
+        </a>
+        <button class="sf-toggle" id="sfToggleBtn" aria-label="Buka menu kontak" type="button">
+          <svg viewBox="0 0 24 24" id="sfToggleIcon"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+      </div>
+      <script>
+      (function() {
+        const wrap = document.getElementById('socialFloat');
+        const toggleBtn = document.getElementById('sfToggleBtn');
+        toggleBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          wrap.classList.toggle('buka');
+        });
+        document.addEventListener('click', function(e) {
+          if (!wrap.contains(e.target)) {
+            wrap.classList.remove('buka');
+          }
+        });
+
+        // Pastikan tombol selalu nempel di tepi layar asli (visual viewport),
+        // bukan ikut dokumen — supaya tidak "ngambang" di tengah saat address bar
+        // browser HP muncul/hilang.
+        function posisikanUlang() {
+          const vv = window.visualViewport;
+          if (!vv) return;
+          const jarakBawah = window.innerHeight - (vv.height + vv.offsetTop);
+          const jarakKanan = window.innerWidth - (vv.width + vv.offsetLeft);
+          wrap.style.bottom = (8 + Math.max(0, jarakBawah)) + 'px';
+          wrap.style.right = (8 + Math.max(0, jarakKanan)) + 'px';
+        }
+
+        if (window.visualViewport) {
+          window.visualViewport.addEventListener('resize', posisikanUlang);
+          window.visualViewport.addEventListener('scroll', posisikanUlang);
+        }
+        window.addEventListener('scroll', posisikanUlang);
+        posisikanUlang();
+      })();
+      </script>
+
+      <div class="content-wrap">
+      <h1>web by alzz</h1>
+      <div class="marquee-box">
+  <p class="marquee">🚀 Alzzhost — Solusi digital terpercaya untuk kebutuhan kamu ✨</p>
+</div>
+
+      <h2 class="section-title">Cara Kerja</h2>
+      <div class="cara-kerja">
+        <div class="langkah">
+          <div class="langkah-angka">1</div>
+          <strong>Pilih Paket</strong>
+          <p>Pilih produk yang sesuai kebutuhan kamu</p>
+        </div>
+        <div class="langkah">
+          <div class="langkah-angka">2</div>
+          <strong>Order via WA</strong>
+          <p>Klik Order Sekarang, konfirmasi ke admin</p>
+        </div>
+        <div class="langkah">
+          <div class="langkah-angka">3</div>
+          <strong>Aktif</strong>
+          <p>Bayar, paket langsung aktif dipakai</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">Paket Harga</h2>
+
+      <div class="promo-banner">
+        🔥 Promo berakhir dalam <span id="countdown">--:--:--</span>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-icon-btn" id="openFilterBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="10" y1="18" x2="14" y2="18"></line></svg>
+          Filter
+        </button>
+      </div>
+
+      <div class="sheet-overlay" id="sheetOverlay"></div>
+      <div class="bottom-sheet" id="bottomSheet">
+        <div class="sheet-drag-zone" id="sheetDragZone">
+          <div class="sheet-handle"></div>
+        </div>
+
+        <div class="sheet-title">Urutkan Harga</div>
+        <div class="sheet-options">
+          <button class="tab-btn sort-btn active" data-sort="termurah">Termurah</button>
+          <button class="tab-btn sort-btn" data-sort="termahal">Termahal</button>
+        </div>
+
+        <div class="sheet-title">Tipe Paket</div>
+        <div class="sheet-options">
+          <button class="tab-btn tipe-btn active" data-tipe="all">Semua Tipe</button>
+          <button class="tab-btn tipe-btn" data-tipe="harian">Harian</button>
+          <button class="tab-btn tipe-btn" data-tipe="mingguan">Mingguan</button>
+          <button class="tab-btn tipe-btn" data-tipe="perbulan">Perbulan</button>
+          <button class="tab-btn tipe-btn" data-tipe="permanen">Permanen</button>
+        </div>
+
+        <button class="sheet-apply-btn" id="applyFilterBtn">Terapkan</button>
+      </div>
+
+      <div class="pricing-wrap" id="pricingWrap">
+        <div class="price-card" data-category="hosting" data-harga="15000" data-tipe="perbulan" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Shared Hosting</div>
+            <div>
+              <span class="harga">Rp 15.000/bln</span>
+              <span class="panah">▼</span>
+            </div>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Hosting ringan buat website pribadi atau usaha kecil, cocok kalau kamu baru mulai dan butuh tempat naruh website tanpa ribet setting server.</p>
+            <ul>
+              <li>Storage 1 GB</li>
+              <li>Bandwidth Unlimited</li>
+              <li>Free SSL</li>
+              <li>Fast Response 09.00–23.00 WIB</li>
+              <li>Garansi Uang Kembali 3 Hari</li>
+            </ul>
+            <label class="banding-check" onclick="event.stopPropagation()">
+              <input type="checkbox" class="chk-banding" data-nama="Shared Hosting" data-harga="Rp 15.000/bln" data-fitur="Storage 1 GB|Bandwidth Unlimited|Free SSL|Fast Response 09.00–23.00 WIB|Garansi Uang Kembali 3 Hari" data-wa="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20Shared%20Hosting" onchange="toggleBanding(this)">
+              Tambahkan ke perbandingan
+            </label>
+            <a href="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20Shared%20Hosting" target="_blank" onclick="event.stopPropagation()">
+              <button>Order Sekarang</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-card" data-category="vps" data-harga="15000" data-tipe="harian" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">VPS Harian</div>
+            <div>
+              <span class="harga">Rp 15.000/hari</span>
+              <span class="panah">▼</span>
+            </div>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Server pribadi jangka pendek, cocok buat kebutuhan mendadak atau coba-coba sebelum ambil paket bulanan.</p>
+            <ul>
+              <li>RAM 2 GB</li>
+              <li>SSD 20 GB</li>
+              <li>Full Root Access</li>
+              <li>Fast Response 09.00–23.00 WIB</li>
+              <li>Garansi Uang Kembali 3 Hari</li>
+            </ul>
+            <label class="banding-check" onclick="event.stopPropagation()">
+              <input type="checkbox" class="chk-banding" data-nama="VPS Harian" data-harga="Rp 15.000/hari" data-fitur="RAM 2 GB|SSD 20 GB|Full Root Access|Fast Response 09.00–23.00 WIB|Garansi Uang Kembali 3 Hari" data-wa="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20VPS%20Harian" onchange="toggleBanding(this)">
+              Tambahkan ke perbandingan
+            </label>
+            <a href="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20VPS%20Harian" target="_blank" onclick="event.stopPropagation()">
+              <button>Order Sekarang</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-card" data-category="vps" data-harga="30000" data-tipe="mingguan" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">VPS Mingguan</div>
+            <div>
+              <span class="harga">Rp 30.000/minggu</span>
+              <span class="panah">▼</span>
+            </div>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Server pribadi durasi seminggu, pas buat proyek jangka pendek tanpa perlu komitmen bulanan.</p>
+            <ul>
+              <li>RAM 2 GB</li>
+              <li>SSD 20 GB</li>
+              <li>Full Root Access</li>
+              <li>Fast Response 09.00–23.00 WIB</li>
+              <li>Garansi Uang Kembali 3 Hari</li>
+            </ul>
+            <label class="banding-check" onclick="event.stopPropagation()">
+              <input type="checkbox" class="chk-banding" data-nama="VPS Mingguan" data-harga="Rp 30.000/minggu" data-fitur="RAM 2 GB|SSD 20 GB|Full Root Access|Fast Response 09.00–23.00 WIB|Garansi Uang Kembali 3 Hari" data-wa="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20VPS%20Mingguan" onchange="toggleBanding(this)">
+              Tambahkan ke perbandingan
+            </label>
+            <a href="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20VPS%20Mingguan" target="_blank" onclick="event.stopPropagation()">
+              <button>Order Sekarang</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-card" data-category="vps" data-harga="50000" data-tipe="perbulan" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">VPS</div>
+            <div>
+              <span class="harga">Rp 50.000/bln</span>
+              <span class="panah">▼</span>
+            </div>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Server pribadi dengan akses penuh, cocok buat kamu yang mau install aplikasi sendiri, jalanin bot, atau butuh kontrol lebih dibanding shared hosting.</p>
+            <ul>
+              <li>RAM 2 GB</li>
+              <li>SSD 20 GB</li>
+              <li>Full Root Access</li>
+              <li>Fast Response 09.00–23.00 WIB</li>
+              <li>Garansi Uang Kembali 3 Hari</li>
+            </ul>
+            <label class="banding-check" onclick="event.stopPropagation()">
+              <input type="checkbox" class="chk-banding" data-nama="VPS" data-harga="Rp 50.000/bln" data-fitur="RAM 2 GB|SSD 20 GB|Full Root Access|Fast Response 09.00–23.00 WIB|Garansi Uang Kembali 3 Hari" data-wa="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20VPS" onchange="toggleBanding(this)">
+              Tambahkan ke perbandingan
+            </label>
+            <a href="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20VPS" target="_blank" onclick="event.stopPropagation()">
+              <button>Order Sekarang</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-card" data-category="domain" data-harga="99000" data-tipe="permanen" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Domain</div>
+            <div>
+              <span class="harga">Rp 99.000/thn</span>
+              <span class="panah">▼</span>
+            </div>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Nama alamat website kamu sendiri (misal namakamu.com), biar keliatan lebih profesional dan gampang diinget orang.</p>
+            <ul>
+              <li>Domain .com / .id</li>
+              <li>Free WHOIS Protect</li>
+              <li>DNS Management</li>
+              <li>Garansi Uang Kembali 3 Hari</li>
+            </ul>
+            <label class="banding-check" onclick="event.stopPropagation()">
+              <input type="checkbox" class="chk-banding" data-nama="Domain" data-harga="Rp 99.000/thn" data-fitur="Domain .com / .id|Free WHOIS Protect|DNS Management|Garansi Uang Kembali 3 Hari" data-wa="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20Domain" onchange="toggleBanding(this)">
+              Tambahkan ke perbandingan
+            </label>
+            <a href="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20Domain" target="_blank" onclick="event.stopPropagation()">
+              <button>Order Sekarang</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="price-card" data-category="hosting" data-harga="25000" data-tipe="perbulan" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Reseller Panel</div>
+            <div>
+              <span class="harga">Rp 25.000/bulan</span>
+              <span class="panah">▼</span>
+            </div>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Panel reseller buat kamu yang mau jualan sendiri, bebas atur kuota dan harga jual ke pelanggan.</p>
+            <ul>
+              <li>Bot On 24 Jam</li>
+              <li>Bebas Create 1GB–Unlimited</li>
+              <li>Bebas Jual Panel</li>
+              <li>Garansi Uang Kembali 3 Hari</li>
+            </ul>
+            <label class="banding-check" onclick="event.stopPropagation()">
+              <input type="checkbox" class="chk-banding" data-nama="Reseller Panel" data-harga="Rp 25.000/bulan" data-fitur="Bot On 24 Jam|Bebas Create 1GB–Unlimited|Bebas Jual Panel|Garansi Uang Kembali 3 Hari" data-wa="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20Reseller%20Panel" onchange="toggleBanding(this)">
+              Tambahkan ke perbandingan
+            </label>
+            <a href="https://wa.me/6285647110029?text=Halo%20Alzzhost%2C%20saya%20mau%20tanya%20paket%20Reseller%20Panel" target="_blank" onclick="event.stopPropagation()">
+              <button>Order Sekarang</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:28px;">Pertanyaan yang Sering Ditanyakan</h2>
+
+      <div class="pricing-wrap" id="faqWrap">
+        <div class="price-card faq-card" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Gimana cara order?</div>
+            <span class="panah">▼</span>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Tinggal pilih paket yang kamu mau, klik tombol "Order Sekarang", nanti langsung diarahkan ke WhatsApp buat konfirmasi pesanan sama admin.</p>
+          </div>
+        </div>
+
+        <div class="price-card faq-card" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Metode pembayaran apa aja?</div>
+            <span class="panah">▼</span>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Pembayaran bisa lewat transfer bank atau e-wallet. Detail lengkap akan diinfokan admin lewat WhatsApp saat proses order.</p>
+          </div>
+        </div>
+
+        <div class="price-card faq-card" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Berapa lama proses aktivasi?</div>
+            <span class="panah">▼</span>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Setelah pembayaran dikonfirmasi, paket biasanya langsung aktif dalam hitungan menit sampai maksimal 1 jam pada jam operasional.</p>
+          </div>
+        </div>
+
+        <div class="price-card faq-card" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Jam berapa admin bisa dihubungi?</div>
+            <span class="panah">▼</span>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Chat WhatsApp bisa dikirim kapan saja. Admin online dan merespon cepat setiap hari pukul 09.00–23.00 WIB. Di luar jam itu, pesan tetap masuk dan akan dibalas begitu admin online kembali.</p>
+          </div>
+        </div>
+
+        <div class="price-card faq-card" onclick="bukaKartu(this)">
+          <div class="row">
+            <div class="nama-produk">Apakah ada garansi kalau ada masalah?</div>
+            <span class="panah">▼</span>
+          </div>
+          <div class="detail">
+            <p class="deskripsi">Kalau ada kendala teknis dari sisi server, langsung hubungi admin lewat WhatsApp dan akan dibantu sampai selesai.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="banding-bar" id="bandingBar">
+        <span id="bandingText">0 dipilih</span>
+        <div class="banding-bar-actions">
+          <button id="bandingResetBtn" type="button">Reset</button>
+          <button id="bandingBukaBtn" type="button" disabled>Bandingkan</button>
+        </div>
+      </div>
+
+      <div class="sheet-overlay" id="bandingOverlay"></div>
+      <div class="bottom-sheet" id="bandingSheet">
+        <div class="sheet-drag-zone" id="bandingDragZone">
+          <div class="sheet-handle"></div>
+        </div>
+        <div class="sheet-title">Perbandingan Paket</div>
+        <div class="banding-table" id="bandingIsi"></div>
+        <button class="sheet-apply-btn" id="tutupBandingBtn">Tutup</button>
+      </div>
+
+      <script>
+      function bukaKartu(kartu) {
+        const sudahTerbuka = kartu.classList.contains('open');
+        kartu.classList.toggle('open');
+
+        if (!sudahTerbuka) {
+          setTimeout(() => {
+            kartu.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 260);
+        }
+      }
+
+      let daftarBanding = [];
+
+      function updateBandingBar() {
+        const bar = document.getElementById('bandingBar');
+        const teks = document.getElementById('bandingText');
+        const btnBuka = document.getElementById('bandingBukaBtn');
+
+        if (daftarBanding.length === 0) {
+          bar.classList.remove('show');
+          return;
+        }
+        bar.classList.add('show');
+        teks.textContent = daftarBanding.length + ' dipilih: ' + daftarBanding.map(p => p.nama).join(', ');
+        btnBuka.disabled = daftarBanding.length !== 2;
+      }
+
+      function toggleBanding(cb) {
+        const data = {
+          nama: cb.dataset.nama,
+          harga: cb.dataset.harga,
+          fitur: cb.dataset.fitur.split('|'),
+          wa: cb.dataset.wa
+        };
+
+        if (cb.checked) {
+          if (daftarBanding.length >= 2) {
+            cb.checked = false;
+            alert('Maksimal 2 produk untuk dibandingkan. Hapus salah satu dulu ya.');
+            return;
+          }
+          daftarBanding.push(data);
+        } else {
+          daftarBanding = daftarBanding.filter(p => p.nama !== data.nama);
+        }
+        updateBandingBar();
+      }
+
+      document.getElementById('bandingResetBtn').addEventListener('click', () => {
+        daftarBanding = [];
+        document.querySelectorAll('.chk-banding').forEach(cb => cb.checked = false);
+        updateBandingBar();
+      });
+
+      const bandingOverlay = document.getElementById('bandingOverlay');
+      const bandingSheet = document.getElementById('bandingSheet');
+
+      function bukaBandingSheet() {
+        const isi = document.getElementById('bandingIsi');
+        isi.innerHTML = daftarBanding.map(p => `
+          <div class="banding-kolom">
+            <h4>${p.nama}</h4>
+            <span class="banding-harga">${p.harga}</span>
+            <ul>${p.fitur.map(f => `<li>${f}</li>`).join('')}</ul>
+            <a href="${p.wa}" target="_blank"><button class="banding-order-btn">Order Sekarang</button></a>
+          </div>
+        `).join('');
+        bandingSheet.classList.add('open');
+        bandingOverlay.classList.add('open');
+      }
+
+      function tutupBandingSheet() {
+        bandingSheet.classList.remove('open');
+        bandingOverlay.classList.remove('open');
+      }
+
+      document.getElementById('bandingBukaBtn').addEventListener('click', bukaBandingSheet);
+      document.getElementById('tutupBandingBtn').addEventListener('click', tutupBandingSheet);
+      bandingOverlay.addEventListener('click', tutupBandingSheet);
+
+      const bandingDragZone = document.getElementById('bandingDragZone');
+      let bDragStartY = 0;
+      let bDragDeltaY = 0;
+      let bSedangDrag = false;
+
+      function bDragMulai(e) {
+        bSedangDrag = true;
+        bDragStartY = e.touches ? e.touches[0].clientY : e.clientY;
+        bandingSheet.style.transition = 'none';
+      }
+      function bDragJalan(e) {
+        if (!bSedangDrag) return;
+        const y = e.touches ? e.touches[0].clientY : e.clientY;
+        bDragDeltaY = Math.max(0, y - bDragStartY);
+        bandingSheet.style.transform = `translateY(${bDragDeltaY}px)`;
+      }
+      function bDragSelesai() {
+        if (!bSedangDrag) return;
+        bSedangDrag = false;
+        bandingSheet.style.transition = '';
+        bandingSheet.style.transform = '';
+        if (bDragDeltaY > 90) tutupBandingSheet();
+        bDragDeltaY = 0;
+      }
+      bandingDragZone.addEventListener('touchstart', bDragMulai, { passive: true });
+      bandingDragZone.addEventListener('touchmove', bDragJalan, { passive: true });
+      bandingDragZone.addEventListener('touchend', bDragSelesai);
+      bandingDragZone.addEventListener('mousedown', bDragMulai);
+      document.addEventListener('mousemove', bDragJalan);
+      document.addEventListener('mouseup', bDragSelesai);
+
+      let tipeAktif = 'all';
+      let urutanAktif = 'termurah';
+
+      function terapkanFilterSort() {
+        const wrap = document.getElementById('pricingWrap');
+        wrap.querySelectorAll('.grup-label').forEach(el => el.remove());
+
+        const cards = Array.from(wrap.querySelectorAll('.price-card'));
+
+        cards.forEach(card => {
+          const cocok = (tipeAktif === 'all' || card.dataset.tipe === tipeAktif);
+          card.style.display = cocok ? '' : 'none';
+        });
+
+        const urutanTipe = { harian: 0, mingguan: 1, perbulan: 2, permanen: 3 };
+
+        cards.sort((a, b) => {
+          if (tipeAktif === 'all') {
+            const ta = urutanTipe[a.dataset.tipe] ?? 99;
+            const tb = urutanTipe[b.dataset.tipe] ?? 99;
+            if (ta !== tb) return ta - tb;
+          }
+          const ha = parseInt(a.dataset.harga, 10);
+          const hb = parseInt(b.dataset.harga, 10);
+          return urutanAktif === 'termurah' ? ha - hb : hb - ha;
+        });
+
+        cards.forEach(card => wrap.appendChild(card));
+
+        if (tipeAktif === 'all') {
+          const namaTipe = { harian: 'Harian', mingguan: 'Mingguan', perbulan: 'Perbulan', permanen: 'Permanen' };
+          let tipeSebelumnya = null;
+          cards.forEach(card => {
+            if (card.style.display === 'none') return;
+            if (card.dataset.tipe !== tipeSebelumnya) {
+              const label = document.createElement('div');
+              label.className = 'grup-label';
+              label.textContent = namaTipe[card.dataset.tipe] || card.dataset.tipe;
+              wrap.insertBefore(label, card);
+              tipeSebelumnya = card.dataset.tipe;
+            }
+          });
+        }
+      }
+
+      document.querySelectorAll('.sort-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          urutanAktif = btn.dataset.sort;
+          terapkanFilterSort();
+        });
+      });
+
+      document.querySelectorAll('.tipe-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.tipe-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          tipeAktif = btn.dataset.tipe;
+          terapkanFilterSort();
+        });
+      });
+
+      terapkanFilterSort();
+
+      const bottomSheet = document.getElementById('bottomSheet');
+      const sheetOverlay = document.getElementById('sheetOverlay');
+      const openFilterBtn = document.getElementById('openFilterBtn');
+      const applyFilterBtn = document.getElementById('applyFilterBtn');
+
+      function bukaSheet() {
+        bottomSheet.classList.add('open');
+        sheetOverlay.classList.add('open');
+      }
+
+      function tutupSheet() {
+        bottomSheet.classList.remove('open');
+        sheetOverlay.classList.remove('open');
+      }
+
+      openFilterBtn.addEventListener('click', bukaSheet);
+      sheetOverlay.addEventListener('click', tutupSheet);
+      applyFilterBtn.addEventListener('click', tutupSheet);
+
+      const sheetDragZone = document.getElementById('sheetDragZone');
+      let dragStartY = 0;
+      let dragDeltaY = 0;
+      let sedangDrag = false;
+
+      function dragMulai(e) {
+        sedangDrag = true;
+        dragStartY = e.touches ? e.touches[0].clientY : e.clientY;
+        bottomSheet.style.transition = 'none';
+      }
+
+      function dragJalan(e) {
+        if (!sedangDrag) return;
+        const y = e.touches ? e.touches[0].clientY : e.clientY;
+        dragDeltaY = Math.max(0, y - dragStartY);
+        bottomSheet.style.transform = `translateY(${dragDeltaY}px)`;
+      }
+
+      function dragSelesai() {
+        if (!sedangDrag) return;
+        sedangDrag = false;
+        bottomSheet.style.transition = '';
+        bottomSheet.style.transform = '';
+        if (dragDeltaY > 90) {
+          tutupSheet();
+        }
+        dragDeltaY = 0;
+      }
+
+      sheetDragZone.addEventListener('touchstart', dragMulai, { passive: true });
+      sheetDragZone.addEventListener('touchmove', dragJalan, { passive: true });
+      sheetDragZone.addEventListener('touchend', dragSelesai);
+
+      sheetDragZone.addEventListener('mousedown', dragMulai);
+      document.addEventListener('mousemove', dragJalan);
+      document.addEventListener('mouseup', dragSelesai);
+
+      // Countdown promo — hanya berlaku untuk kunjungan pertama user, tersimpan di browser
+      const jamPromo = 5;   // promo berjalan berapa jam dari kunjungan pertama
+      const menitPromo = 0;
+      const kunciPromo = 'alzzhost_promo_selesai';
+      const promoBanner = document.querySelector('.promo-banner');
+
+      let waktuSelesai = localStorage.getItem(kunciPromo);
+      if (!waktuSelesai) {
+        waktuSelesai = new Date().getTime() + (jamPromo * 60 * 60 * 1000) + (menitPromo * 60 * 1000);
+        localStorage.setItem(kunciPromo, waktuSelesai);
+      } else {
+        waktuSelesai = parseInt(waktuSelesai, 10);
+      }
+
+      let intervalPromo = null;
+
+      function sembunyikanPromo() {
+        promoBanner.classList.add('promo-habis');
+        if (intervalPromo) clearInterval(intervalPromo);
+      }
+
+      function updateCountdown() {
+        const sisa = waktuSelesai - new Date().getTime();
+        const el = document.getElementById('countdown');
+        if (sisa <= 0) {
+          sembunyikanPromo();
+          return;
+        }
+        const jam = Math.floor(sisa / (1000 * 60 * 60));
+        const menit = Math.floor((sisa % (1000 * 60 * 60)) / (1000 * 60));
+        const detik = Math.floor((sisa % (1000 * 60)) / 1000);
+        el.textContent = String(jam).padStart(2,'0') + ":" + String(menit).padStart(2,'0') + ":" + String(detik).padStart(2,'0');
+      }
+
+      if (waktuSelesai - new Date().getTime() <= 0) {
+        sembunyikanPromo();
+      } else {
+        updateCountdown();
+        intervalPromo = setInterval(updateCountdown, 1000);
+      }
+      </script>
+
+      <div class="card">
+        <h2>GRUB WA ALZZ</h2>
+        <p style="font-size:15px;">Gabung grub WhatsApp kami untuk info dan update terbaru.</p>
+        <a href="https://chat.whatsapp.com/JvBwvV3hGoqBA2RzHy3yFQ?s=cl&p=a&mlu=4" target="_blank">
+          <button>klik disini</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>SALURAN WA ALZZ</h3>
+        <p style="font-size:15px;">Gabung saluran WhatsApp kami untuk info dan update terbaru.</p>
+        <a href="https://whatsapp.com/channel/0029Vb8u7yH30LKXxF66KU1C" target="_blank">
+          <button>klik disini</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <h5>SALURAN WA ALZZ</h5>
+        <p style="font-size:15px;">Gabung Testi WhatsApp Alzz Ganteng Amanah 100%.</p>
+        <a href="https://whatsapp.com/channel/0029VbDPLxg3AzNXM7Tsqs33" target="_blank">
+          <button>klik disini</button>
+        </a>
+      </div>
+
+      <div style="text-align:center; padding: 20px 10px 90px; font-size: 12px; color: #001a4d;">
+        © 2026 Alzzhost. Semua hak dilindungi.<br>
+        <a href="kebijakan.html" style="color:#0072ff; font-weight:600; text-decoration:none;">Kebijakan Privasi & Syarat Ketentuan</a>
+      </div>
+      </div>
+    </body>
+    </html>
